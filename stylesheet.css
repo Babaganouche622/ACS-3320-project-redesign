@@ -1,0 +1,242 @@
+
+
+
+body {
+/* Set background colour */
+background-color: rgb(94, 96, 94);
+}
+
+main {
+display: grid;
+/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+
+header {
+/* use a flexbox to set the title, update tag, and page track centered */
+display: flex;
+flex-direction: column;
+/* flex-wrap: wrap; */
+border: 1em solid #333;
+border-top: none;
+border-bottom: none;
+text-align: center;
+margin: -0.5em -0.5em;
+/* text-align: center; */
+}
+
+header p {
+text-shadow: 10px 10px 10px red;
+}
+
+header figcaption {
+text-shadow: 15px 15px 15px hotpink,
+5px 5px 5px #333;
+}
+
+audio {
+width: 500px;
+}
+
+header figure {
+font-size: 1.5em;
+font-family: zapfino;
+color: red;
+}
+
+h1 {
+/* larger text coloured red */
+font-family: zapfino, fantasy;
+font-weight: 1000;
+font-size: 4em;
+color: red;
+text-shadow: 10px 10px 10px #333,
+20px 20px 20px red;
+text-align: center;
+/* Can you make text look like it's oozing */
+}
+
+.contents {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+border: 1em solid #333;
+border-top: none;
+padding: 0;
+margin: 0 -0.5em;
+}
+
+nav ul li a {
+display: flex;
+/* display: block; */
+flex-direction: column;
+/* flex-wrap: wrap; */
+box-shadow: 10px 10px 10px #333;
+border-radius: 1em;
+max-width: 100px;
+/* max-height: 75px; */
+/* min-width: 100px; */
+/* min-height: 75px; */
+align-items: center;
+border: 5px solid hotpink;
+font-family: Helvetica, arial, sans-serif;
+color: #333;
+background-color: rgba(244, 126, 126, 0.695);
+text-decoration: none;
+text-align: center;
+padding: 1em;
+margin: 0.5em 0.5em;
+font-size: 1em;
+}
+
+li a:hover {
+color: white;
+background-color: purple;
+}
+
+section figure a img {
+/* align-items: center; */
+display: flex;
+border: 5px;
+border-radius: 5em;
+width: fit-content;
+height: fit-content;
+}
+
+section figure a img:hover {
+box-shadow: 5px 5px 20px black;
+/* background-color: black; */
+}
+
+br {
+line-height: 3em;
+}
+
+nav ul {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+/* padding: none; */
+/* margin: none; */
+}
+
+nav ul li{
+/* I need this flex box to display to remove the styling of the dots from a list. */
+/* Also to keep the box set at a given size and not shrink to the size of the text. */
+display: flex;
+}
+
+article {
+display: flex;
+flex-wrap: wrap;
+border: 1em solid #333;
+border-top: 0.5em;
+margin: 0 -0.5em
+}
+
+section h2 {
+font-family: zapfino;
+font-size: 3em;
+text-shadow: 10px 10px 10px #333;
+color: red;
+}
+
+article h2 {
+font-family: zapfino, fantasy;
+font-size: 3em;
+text-shadow: 10px 10px 10px #333;
+color: red;
+}
+
+h3 {
+font-size: 2em;
+font-family: zapfino, fantasy;
+}
+
+article section {
+/* each section should look like a card that auto aligns to the screen size */
+/* Should read top down, without information being cut out from the box */
+/* I had to remove the video from the HTML file, it broke my flex box so much and I couldn't wrap my head around how to keep it. */
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+box-shadow: 20px 20px 20px #333;
+max-width: 550px;
+max-height: 800px;
+min-height: 800px;
+align-items: center;
+border: 5px solid hotpink;
+border-radius: 3em;
+padding: 1em;
+margin: 2em;
+background-color: rgba(244, 126, 126, 0.695);
+}
+
+article section aside p {
+color: aqua;
+}
+
+article section p { 
+font-size: 1.5em;
+font-weight: 1000;
+font-family: Helvetica, Arial, sans-serif;
+color: rgb(155, 40, 155);
+margin: 0.5em 0;
+padding: 0;
+}
+
+article section:hover {
+color: white;
+background-color: red;
+}
+
+blockquote {
+/* Should have correct spacing between line-breaks */
+line-height: 1.25em;
+padding: 0 0 0 0;
+margin: 0;
+font-size: 1.5em;
+font-family: cursive;
+}
+
+abbr {
+text-decoration-line: none;
+}
+
+figcaption {
+/* The double naming was redundant but having the caption makes sense in the mark-up. */
+display: none;
+}
+
+.footer {
+border: 1em solid #333;
+border-top: 0.5em;
+padding: 0 1em;
+margin: 0 -0.5em -0.5em -0.5em;
+}
+
+.footer h2 {
+font-size: 3em;
+margin: 0;
+padding: 0;
+}
+
+.footer p {
+font-size: 1.5em;
+font-family: Helvetica, Arial, sans-serif;
+}
+
+footer {
+display: flex;
+flex-direction: column;
+box-shadow: 20px 20px 20px #333;
+max-width: 1200px;
+border: 5px solid hotpink;
+border-radius: 3em;
+padding: 1em 1em 1em 3em;
+margin: 2em;
+background-color: rgba(244, 126, 126, 0.695);
+}
+
+address, a {
+/* Can you style both ancor items to look like buttons but not break each other? */
+}

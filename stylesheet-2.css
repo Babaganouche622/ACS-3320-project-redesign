@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "new-garamond";
+  src: url(EBGaramond-VariableFont_wght.ttf);
+}
+
+:root {
+  --hover-display-none: none;
+  --hover-display-block: block;
+}
+
+
+body {
+  background-image: linear-gradient(to bottom, #131313, #46433C 90%);
+  font-family: new-garamond, serif;
+}
+
+header > h1 {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  background-color: #373529;
+  color: #BDB29D;
+  gap: 1rem;
+  padding-left: 4rem;
+}
+
+header > h1::before {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: url(images/coat-of-arms.png);
+  background-size: cover;
+}
+
+
+
+.Inventory {
+  background-color: rgb(33, 32, 28, 0.2);
+  width: 420px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  border-radius: 10px;
+  display: grid;
+  padding: 1rem;
+  margin-left: 10rem;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+    "text text text text text"
+    "Weapon1 Weapon2 Weapon3 Ammo1 Ammo2"
+    "Weapon4 Weapon5 Weapon6 Ammo3 Ammo4"
+    "Head Chest Hands Feet ."
+    "Talisman1 Talisman2 Talisman3 Talisman4 ."
+    "Item1 Item2 Item3 Item4 Item5"
+    "Item6 Item7 Item8 Item9 Item10";
+}
+
+.Item:hover {
+  box-shadow: 0px 0px 10px #b39f1c;
+}
+
+.Text {
+  grid-area: text;
+  color: #BDB29D;
+  font-size: 1.5rem;
+}
+
+.Chest {
+  grid-area: Chest;
+  background-image: url(images/chest.png);
+}
+
+.Feet {
+  grid-area: Feet;
+  background-image: url(images/legs.png);
+}
+
+.Hands {
+  grid-area: Hands;
+  background-image: url(images/hands.png);
+}
+
+.Head {
+  grid-area: Head;
+  background-image: url(images/helm.png);
+}
+
+.Talisman-1 {
+  grid-area: Talisman1;
+  background-image: url(images/talisman.png);
+}
+
+.Talisman-2 {
+  grid-area: Talisman2;
+  background-image: url(images/talisman.png);
+}
+
+.Talisman-3 {
+  grid-area: Talisman3;
+  background-image: url(images/talisman.png);
+}
+
+.Talisman-4 {
+  grid-area: Talisman4;
+  background-image: url(images/talisman.png);
+}
+
+.Weapon-1 {
+  grid-area: Weapon1;
+  background-image: url(images/weapon.png);
+}
+
+.Weapon-2 {
+  grid-area: Weapon2;
+  background-image: url(images/weapon.png);
+}
+
+.Weapon-3 {
+  grid-area: Weapon3;
+  background-image: url(images/weapon.png);
+}
+
+.Weapon-4 {
+  grid-area: Weapon4;
+  background-image: url(images/offhand.png);
+}
+
+.Weapon-5 {
+  grid-area: Weapon5;
+  background-image: url(images/offhand.png);
+}
+
+.Weapon-6 {
+  grid-area: Weapon6;
+  background-image: url(images/offhand.png);
+}
+
+.Ammo-small-1 {
+  grid-area: Ammo1;
+  background-image: url(images/large-ammo.png);
+}
+
+.Ammo-small-2 {
+  grid-area: Ammo2;
+  background-image: url(images/large-ammo.png);
+}
+
+.Ammo-large-1 {
+  grid-area: Ammo3;
+  background-image: url(images/small-ammo.png);
+}
+
+.Ammo-large-2 {
+  grid-area: Ammo4;
+  background-image: url(images/small-ammo.png);
+}
+
+.Consumable-1 {
+  grid-area: Item1;
+  background-image: url(images/consumable.png);
+}
+
+.Consumable-2 {
+  grid-area: Item2;
+  background-image: url(images/consumable.png);
+}
+
+.Consumable-3 {
+  grid-area: Item3;
+  background-image: url(images/consumable.png);
+}
+
+.Consumable-4 {
+  grid-area: Item4;
+  background-image: url(images/consumable.png);
+}
+
+.Consumable-5 {
+  grid-area: Item5;
+  background-image: url(images/consumable.png);
+}
+
+.Consumable-6 {
+  grid-area: Item6;
+  background-image: url(images/consumable.png);
+}
+
+.Consumable-7 {
+  grid-area: Item7;
+  background-image: url(images/consumable.png);
+}
+
+.Consumable-8 {
+  grid-area: Item8;
+  background-image: url(images/consumable.png);
+}
+
+.Consumable-9 {
+  grid-area: Item9;
+  background-image: url(images/consumable.png);
+}
+
+.Consumable-10 {
+  grid-area: Item10;
+  background-image: url(images/consumable.png);
+}
+
+.Item {
+  /* border: 2px solid rgb(180, 178, 178); */
+  border-radius: 1rem;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+}
+
+.Item > * {
+  display: none;
+}
+
+.Item > .Image {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.Item > .Image > figcaption {
+  display: none;
+}
+
+footer {
+  background-color: #46433C;
+  font-family: new-garamond, serif;
+  color: #BDB29D;
+  padding: 20px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+a {
+  color: #BDB29D;
+}
