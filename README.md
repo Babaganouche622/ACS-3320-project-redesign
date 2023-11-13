@@ -4,7 +4,6 @@
 http://babaganouche622.failingforward.works/ACS1700-Portfolio/
 
 <details>
-  
 <summary>Click to see pictures of my old project</summary>
 
 ![Old Title](images/old-title.png)
